@@ -1,0 +1,111 @@
+#main-conversation{
+    @include main-without-mobile-searchbar;
+    background-image: url("../img/back_conversation.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 92vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.figure-user-conversation{
+    width: 100px;
+    height: 100px;
+    @media (max-width: 768px){
+        width: 50px;
+        height: 50px;
+    }    
+}
+
+.figure-user-conversation img{
+    height: 100%;
+    width: 100%;
+}
+
+#section-top-conversation{
+    background-color: $primary-color;
+}
+
+#annonce-conversation{
+    background-color: $searchbar-color;
+}
+
+#conversation-area{
+    background-color: $white-color;
+}
+
+#conversation-scrollable{
+    height: 50vh; 
+    overflow-y: auto;   
+}
+
+.correspondant-message,
+.mon-message{
+    position: relative;
+    min-width: fit-content;
+}
+
+.correspondant-message{
+    background-color: $primary-color;
+    margin-right: 50%;
+    @media (max-width: 768px){
+        margin-right: 80%;
+    }    
+
+}
+
+.mon-message{
+    background-color: $secondary-color;
+}
+
+.correspondant-message-state,
+.mon-message-state{
+    position: absolute;
+    bottom: -3rem;
+}
+
+.correspondant-message-state{
+    left: 0;
+}
+
+.mon-message-state{
+    right: 0;
+}
+
+#form-conversation{
+    border-top: 3px solid $text-color;
+}
+
+#fileInput{
+    position: absolute;
+    top: 0;
+    right: -999;
+}
+
+
+#container-input-file:focus-within label,
+#container-submit-message:focus-within{
+    background-color: $secondary-color;
+    border-radius: 5px;
+}
+
+#user-conversation{
+    @media (max-width: 768px){
+        font-size: 1.2rem;
+    }  
+}
+
+#annonce-conversation{
+    font-size: 1.3rem;
+    @media (max-width: 768px){
+        font-size: 1.1rem;
+    }  
+}
+
+.user-conversation-top-icon{
+    font-size: 1.5rem;
+}
+
+#container-dots-action-conversation{
+    position: relative;
+}

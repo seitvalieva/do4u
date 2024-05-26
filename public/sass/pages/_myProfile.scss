@@ -1,0 +1,139 @@
+/* fil d'ariane */
+.fil-ariane a,
+.fil-ariane p{
+    @include links-style;
+}
+
+.figure-user-profile-style{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.figure-user-profile-style img {
+    height: 100%;
+    border-radius: 50%;
+}
+
+.line-divider{
+    width: 100%;
+    border-bottom: 3px solid $searchbar-color;
+}
+
+.profile-badge{
+    height: 100%;
+    padding: 1px 3px;
+    background-color: $secondary-color;
+    width: fit-content;
+}
+
+.checked-icon {
+    color: green;
+}
+
+#main-container-mine{
+    @include main-common-style;
+    min-height: 90vh;
+}
+
+.fa-plus{
+    color: $white-color;
+}
+
+// Annonces
+
+.action-ad-link,
+.action-ad-link i{
+    color: $white-color;
+}
+
+.action-ad-link{
+    width: 100%;
+    text-decoration: none;
+}
+
+.action-ad-consulter{
+    background-color: $primary-color;
+
+    &:hover{
+        background-color: darken($primary-color, 10%);
+    }
+}
+
+.action-ad-modifier{
+    background-color: $secondary-color;
+    &:hover{
+        background-color: darken($secondary-color, 10%);
+    }
+}
+
+.action-ad-supprimer{
+    background-color: $danger-color;
+
+    &:hover{
+        background-color: darken($danger-color, 10%);
+    }
+}
+
+/* Avis */
+
+.figure-avis{
+    width: 100px;
+    height: 100px;
+}
+
+.figure-avis img{
+    height: 100%;
+    width: 100%;
+}
+
+.avis-commentaire{
+    @include blue-border-bottom;
+}
+
+.avis-commentaire a:first-child{
+    color: $text-color;
+}
+
+.full-star-icon{
+    color: $yellow-logo-color;
+}
+
+.title-profile{
+    font-size: 1.5rem;
+}
+
+.primary-icon{
+    color: $primary-color;
+}
+
+.profile-tab-links{
+    color: $secondary-color;
+}
+
+.container-dots-action{
+    position: relative;
+    height: 100%;
+}
+
+.signalement-action,
+.signalement-action--active,
+.signalement-action:hover,
+.signalement-action--active:hover{
+    width: fit-content;
+}
+
+.signalement-action{
+    position: absolute;
+    top: 0;
+    right: -9999px;
+    
+}
+
+.signalement-action--active{
+    right: 2rem;  
+}
+
+.categorie-avis-links{
+    @include links-style;
+}
